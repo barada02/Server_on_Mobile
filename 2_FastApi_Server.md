@@ -47,5 +47,19 @@ pkg install clang rust binutils
 Pydantic (a core dependency of FastAPI) uses Rust extensions for better performance. Without these tools, pip will fail to build the required packages.
 
 ---
+# Phase 3: 
 
-**Next Step**: Proceed to Phase 3 for FastAPI and Uvicorn installation.
+## Step 1: Create Project Directory
+
+Create a dedicated directory for your cloud server:
+
+```bash
+mkdir cloud_server
+```
+
+Navigate into the directory:
+
+```bash
+cd ~/cloud_server
+```
+
