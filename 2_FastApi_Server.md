@@ -63,3 +63,23 @@ Navigate into the directory:
 cd ~/cloud_server
 ```
 
+## Step 2: Set Up Virtual Environment
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+You should see `(venv)` prefix in your terminal:
+
+```bash
+(venv) $
+```
+
