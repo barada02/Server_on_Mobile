@@ -44,3 +44,19 @@ This gives you:
 * nano → editing config
 
 * wget → downloading packages
+
+### What Will Happen Immediately After Upgrade
+
+Once it finishes, you’ll have:
+
+Stable libc
+
+Updated OpenSSL
+
+Working Python binaries (important later)
+
+Network-safe packages
+
+Which means:
+
+Your phone is now server-ready
