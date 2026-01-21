@@ -67,3 +67,25 @@ You'll see output similar to:
 +--------------------------------------------------------------------------------------------+
 ```
 
+🎉 **The HTTPS URL shown is your PUBLIC endpoint!**
+
+Copy this URL - anyone can access your API through it.
+
+## Step 5: Test From Anywhere
+
+### Test the main endpoint:
+
+Open any browser (on any device anywhere in the world) and visit:
+
+```
+https://random-name-abc123.trycloudflare.com
+```
+
+You should see your JSON response:
+
+```json
+{
+  "status": "running",
+  "message": "Hello from my Android cloud server"
+}
+```
