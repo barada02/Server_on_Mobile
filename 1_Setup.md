@@ -67,3 +67,25 @@ I’ll ask you to run:
 pkg --version
 
 > At the time of the upgrade :
+
+(image place holder)
+
+it will ask about 
+
+openssl.cnf
+
+Termux is saying:
+
+“You already have an OpenSSL config file.
+The new package also comes with its own version.
+What should I do?”
+
+```N
+```
+What NOT to Choose (For Now)
+
+Y / I → overwrites config (unnecessary)
+
+D → shows diff (not needed)
+
+Z → drops into shell (confusing now)
