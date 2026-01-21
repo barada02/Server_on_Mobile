@@ -33,3 +33,17 @@ To run the tunnel while keeping your server active:
 E: Unable to locate package ngrok
 ```
 
+### ✅ Solution: Use Cloudflare Tunnel
+
+Install `cloudflared` instead:
+
+```bash
+pkg install -y cloudflared
+```
+
+**What is Cloudflare Tunnel?**
+- Free tunneling service by Cloudflare
+- Creates secure HTTPS connection to your local server
+- No account or signup required for quick tunnels
+- Automatically provides SSL/TLS encryption
+
