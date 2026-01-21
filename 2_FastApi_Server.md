@@ -122,3 +122,20 @@ def root():
 1. Press `CTRL + O` → Press `Enter` (to write/save)
 2. Press `CTRL + X` (to exit nano)
 
+## Step 5: Run the Server
+
+Start your FastAPI server:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+You should see output like:
+
+```
+INFO:     Started server process [xxxxx]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+```
+
