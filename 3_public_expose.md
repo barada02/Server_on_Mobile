@@ -101,3 +101,23 @@ https://random-name-abc123.trycloudflare.com/docs
 This opens the Swagger UI where anyone can test your API interactively.
 
 ---
+
+## Summary
+
+Now you have:
+- ✅ **Session 1**: Running your FastAPI server locally
+- ✅ **Session 2**: Running Cloudflare tunnel
+- ✅ **Public URL**: Your API is now accessible worldwide via HTTPS
+
+### To Stop Everything:
+
+1. In Session 2: Press `CTRL + C` (stops tunnel)
+2. In Session 1: Press `CTRL + C` (stops FastAPI server)
+
+### Important Notes:
+
+⚠️ The tunnel URL changes each time you restart `cloudflared`  
+⚠️ Keep both Termux sessions running for continuous access  
+⚠️ Your phone must stay connected to the internet  
+
+**Next**: Consider implementing authentication if exposing real services!
