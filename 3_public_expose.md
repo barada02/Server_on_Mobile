@@ -47,3 +47,23 @@ pkg install -y cloudflared
 - No account or signup required for quick tunnels
 - Automatically provides SSL/TLS encryption
 
+## Step 4: Start the Tunnel
+
+In Session 2 (the new Termux session), run:
+
+```bash
+cloudflared tunnel --url http://localhost:8000
+```
+
+You'll see output similar to:
+
+```
+2026-01-22T10:30:45Z INF Thank you for trying Cloudflare Tunnel...
+2026-01-22T10:30:46Z INF Connection established
+2026-01-22T10:30:46Z INF 
++--------------------------------------------------------------------------------------------+
+|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+|  https://random-name-abc123.trycloudflare.com                                              |
++--------------------------------------------------------------------------------------------+
+```
+
