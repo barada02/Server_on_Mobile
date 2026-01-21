@@ -32,21 +32,22 @@ Every cloud server consists of three components: Linux + package manager + proce
 
 Run these commands in order:
 
+```bash
 pkg update -y
 pkg upgrade -y
+```
 
-Then
+### Install Essential Tools
+
+```bash
 pkg install -y git curl wget nano
+```
 
-This gives you:
-
-* git → deployments
-
-* curl → API testing
-
-* nano → editing config
-
-* wget → downloading packages
+**What these tools do:**
+- `git` - Version control and deployments
+- `curl` - API testing and HTTP requests
+- `wget` - Downloading packages and files
+- `nano` - Text editor for configuration files
 
 ### What Will Happen Immediately After Upgrade
 
