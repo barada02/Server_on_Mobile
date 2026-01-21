@@ -139,3 +139,23 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
+🎉 **Your phone is now running a cloud API!**
+
+## Step 6: Test Your Server
+
+### Test from the same phone:
+
+Open your mobile browser and navigate to:
+
+```
+http://127.0.0.1:8000
+```
+
+You should see JSON output:
+
+```json
+{
+  "status": "running",
+  "message": "Hello from my Android cloud server"
+}
+```
