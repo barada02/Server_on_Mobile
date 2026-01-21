@@ -117,3 +117,12 @@ This happens on every real Linux server during upgrades.
 
 Choose : N
 
+Why?
+
+Keeps your current repository configuration
+
+Avoids breaking package downloads
+
+Safest option
+
+Industry best practice unless you explicitly changed repos
