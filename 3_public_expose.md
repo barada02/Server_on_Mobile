@@ -89,3 +89,15 @@ You should see your JSON response:
   "message": "Hello from my Android cloud server"
 }
 ```
+
+### Access Interactive API Documentation:
+
+Visit the auto-generated docs:
+
+```
+https://random-name-abc123.trycloudflare.com/docs
+```
+
+This opens the Swagger UI where anyone can test your API interactively.
+
+---
