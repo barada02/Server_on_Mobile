@@ -150,3 +150,34 @@ FastAPI on your Phone
 
 ---
 
+## ⚠️ Important Notes (Real Cloud Truth)
+
+| Behavior | Explanation |
+|----------|-------------|
+| 🔄 **URL changes when tunnel restarts** | This is normal for free quick tunnels - each restart generates a new random URL |
+| 😴 **Free tunnel may sleep when idle** | Cloudflare free tunnels can timeout after inactivity |
+| ✅ **Perfect for demos, webhooks, learning** | Ideal for testing, development, and learning cloud concepts |
+
+### Later Enhancements:
+
+Once you're comfortable with the basics, you can:
+
+- 🌐 **Bind custom domain**: Use your own domain name
+- 🔒 **Make persistent tunnel**: Set up a named tunnel that keeps the same URL
+- 🔐 **Add authentication**: Implement JWT, OAuth, or API keys for security
+- 📊 **Add database**: Connect SQLite, PostgreSQL, or other databases
+- 🚀 **Add more endpoints**: Build a full REST API
+
+---
+
+## 🔜 Next Phase: GitFlow (Version Control)
+
+Once public access is confirmed and working, we will move to Phase 4:
+
+1. ✅ Initialize git repository
+2. ✅ Create `requirements.txt` for dependencies
+3. ✅ Commit code with proper messages
+4. ✅ Simulate real cloud redeploy workflow
+5. ✅ Learn professional development practices
+
+This will teach you the same workflow used by professional developers in real cloud environments!
