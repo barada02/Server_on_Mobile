@@ -83,3 +83,15 @@ You should see `(venv)` prefix in your terminal:
 (venv) $
 ```
 
+## Step 3: Install FastAPI and Uvicorn
+
+Install both packages using pip:
+
+```bash
+pip install fastapi uvicorn
+```
+
+This will install:
+- **FastAPI**: Modern web framework for building APIs
+- **Uvicorn**: Lightning-fast ASGI server
+
