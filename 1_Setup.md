@@ -100,3 +100,20 @@ Y / I → overwrites config (unnecessary)
 D → shows diff (not needed)
 
 Z → drops into shell (confusing now)
+
+### it will ask for 
+
+sources.list Means
+
+sources.list defines where packages are downloaded from (repositories).
+
+Termux is asking:
+
+“You already have a sources list.
+The new package provides a default one.
+What do you want to do?”
+
+This happens on every real Linux server during upgrades.
+
+Choose : N
+
