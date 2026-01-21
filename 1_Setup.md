@@ -80,8 +80,19 @@ Termux is saying:
 The new package also comes with its own version.
 What should I do?”
 
-```N
-```
+``` N ```
+
+Why N is correct
+
+Keeps your existing config
+
+Safest option
+
+Avoids breaking anything
+
+Standard DevOps practice on servers
+
+Even on AWS / Ubuntu servers, we usually keep current config unless we know what we’re doing.
 What NOT to Choose (For Now)
 
 Y / I → overwrites config (unnecessary)
