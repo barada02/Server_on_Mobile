@@ -159,3 +159,17 @@ You should see JSON output:
   "message": "Hello from my Android cloud server"
 }
 ```
+
+### Access Interactive API Documentation:
+
+FastAPI automatically generates interactive API docs:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+This opens Swagger UI where you can test your API endpoints interactively.
+
+---
+
+**Server Status**: ✅ Your FastAPI server is now running on your Android device!
