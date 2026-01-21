@@ -95,3 +95,30 @@ This will install:
 - **FastAPI**: Modern web framework for building APIs
 - **Uvicorn**: Lightning-fast ASGI server
 
+## Step 4: Create Your API Application
+
+Create a new file called `main.py`:
+
+```bash
+nano main.py
+```
+
+Add the following code:
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {
+        "status": "running",
+        "message": "Hello from my Android cloud server"
+    }
+```
+
+### Save the file:
+1. Press `CTRL + O` → Press `Enter` (to write/save)
+2. Press `CTRL + X` (to exit nano)
+
