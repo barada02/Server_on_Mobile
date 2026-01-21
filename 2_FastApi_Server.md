@@ -30,6 +30,22 @@ pip --version
 
 You should see version numbers for both Python and pip, confirming successful installation.
 
+## Important: Prepare for FastAPI Installation
+
+Before installing FastAPI, you may encounter errors related to Rust and pydantic-core during the installation process. To prevent these issues, install the required build tools:
+
+```bash
+pkg install clang rust binutils
+```
+
+### What this solves:
+- **Rust compiler errors**: FastAPI's dependency `pydantic-core` requires Rust to compile
+- **Build tool issues**: Clang and binutils provide necessary compilation tools
+- **Installation failures**: Prevents "error: can't find Rust compiler" and similar build errors
+
+### Why this is needed:
+Pydantic (a core dependency of FastAPI) uses Rust extensions for better performance. Without these tools, pip will fail to build the required packages.
+
 ---
 
 **Next Step**: Proceed to Phase 3 for FastAPI and Uvicorn installation.
