@@ -14,3 +14,22 @@ pkg install -y python python-pip
 - `python`: Installs the latest Python version available in Termux
 - `python-pip`: Installs pip (Python package manager)
 
+### Verify Installation
+
+After installation completes, verify Python is installed correctly:
+
+```bash
+python --version
+```
+
+Check pip version:
+
+```bash
+pip --version
+```
+
+You should see version numbers for both Python and pip, confirming successful installation.
+
+---
+
+**Next Step**: Proceed to Phase 3 for FastAPI and Uvicorn installation.
