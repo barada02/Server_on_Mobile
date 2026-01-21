@@ -12,8 +12,6 @@ Every cloud server consists of three components: Linux + package manager + proce
 
 ### Installation Instructions
 
-### Installation Instructions
-
 1. **Download F-Droid** (open-source app store)
    - Website: https://f-droid.org
 
@@ -49,108 +47,55 @@ pkg install -y git curl wget nano
 - `wget` - Downloading packages and files
 - `nano` - Text editor for configuration files
 
-### What Will Happen Immediately After Upgrade
+### What You'll Get After Setup
 
-Once it finishes, you’ll have:
+- Stable libc library
+- Updated OpenSSL for secure connections
+- Working Python binaries
+- Network-safe packages
 
-Stable libc
+Your phone is now server-ready!
 
-Updated OpenSSL
+---
 
-Working Python binaries (important later)
+## Step 3: Handle Configuration Prompts
 
-Network-safe packages
+During the upgrade process, you'll be asked about configuration files. **Always choose `N`** (keep existing configuration) for the following:
 
-Which means:
+### Prompt 1: openssl.cnf
 
-Your phone is now server-ready
+**Message:** "You already have an OpenSSL config file. The new package also comes with its own version. What should I do?"
 
-### Tiny Check After It Completes (Don’t Run Yet)
+**Answer:** `N`
 
-I’ll ask you to run:
+**Reason:** Keeps your existing config and avoids breaking anything.
+
+### Prompt 2: sources.list
+
+**Message:** "You already have a sources list. The new package provides a default one. What do you want to do?"
+
+**Answer:** `N`
+
+**Reason:** Maintains your current repository configuration and prevents package download issues.
+
+**Note:** `sources.list` defines where packages are downloaded from (repositories).
+
+### Prompt 3: bash.bashrc
+
+**Message:** "You already have a bash config. The package provides a default one. What should I do?"
+
+**Answer:** `N`
+
+**Reason:** Preserves your shell settings (aliases, prompt, environment variables).
+
+---
+
+## Verification
+
+After completing the setup, verify your package manager version:
+
+```bash
 pkg --version
+```
 
-> At the time of the upgrade :
-
-(image place holder)
-
-it will ask about 
-
-openssl.cnf
-
-Termux is saying:
-
-“You already have an OpenSSL config file.
-The new package also comes with its own version.
-What should I do?”
-
-``` N ```
-
-Why N is correct
-
-Keeps your existing config
-
-Safest option
-
-Avoids breaking anything
-
-Standard DevOps practice on servers
-
-Even on AWS / Ubuntu servers, we usually keep current config unless we know what we’re doing.
-What NOT to Choose (For Now)
-
-Y / I → overwrites config (unnecessary)
-
-D → shows diff (not needed)
-
-Z → drops into shell (confusing now)
-
-### it will ask for 
-
-sources.list Means
-
-sources.list defines where packages are downloaded from (repositories).
-
-Termux is asking:
-
-“You already have a sources list.
-The new package provides a default one.
-What do you want to do?”
-
-This happens on every real Linux server during upgrades.
-
-Choose : N
-
-Why?
-
-Keeps your current repository configuration
-
-Avoids breaking package downloads
-
-Safest option
-
-Industry best practice unless you explicitly changed repos
-
-
-### Then it will ask for
-bash.bashrc 
-
-What bash.bashrc Is
-
-bash.bashrc controls:
-
-Shell behavior
-
-Aliases
-
-Prompt settings
-
-Environment variables
-
-Termux is asking:
-
-“You already have a bash config.
-The package provides a default one.
-What should I do?”
-
-choose : N 
+Your Linux server environment is now ready!
