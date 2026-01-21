@@ -126,3 +126,27 @@ Avoids breaking package downloads
 Safest option
 
 Industry best practice unless you explicitly changed repos
+
+
+### Then it will ask for
+bash.bashrc 
+
+What bash.bashrc Is
+
+bash.bashrc controls:
+
+Shell behavior
+
+Aliases
+
+Prompt settings
+
+Environment variables
+
+Termux is asking:
+
+“You already have a bash config.
+The package provides a default one.
+What should I do?”
+
+choose : N 
