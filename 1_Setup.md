@@ -60,3 +60,10 @@ Network-safe packages
 Which means:
 
 Your phone is now server-ready
+
+### Tiny Check After It Completes (Don’t Run Yet)
+
+I’ll ask you to run:
+pkg --version
+
+> At the time of the upgrade :
