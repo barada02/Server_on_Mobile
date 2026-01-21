@@ -1,33 +1,36 @@
-# Phase1: Turn Your Android Phone into a Linux Server
+# Phase 1: Turn Your Android Phone into a Linux Server
 
-Every cloud server = Linux + package manager + processes.
+## Overview
+Every cloud server consists of three components: Linux + package manager + processes.
 
+---
 
-Install the Linux Environment (Termux)
-❌ IMPORTANT: Do NOT use Play Store version
+## Step 1: Install Termux (Linux Environment)
 
-It is outdated and broken for server use.
+### ⚠️ Important Warning
+**DO NOT use the Play Store version** - it is outdated and broken for server use.
 
-✅ Correct Way (Trusted & Standard)
+### Installation Instructions
 
-Open F-Droid (open-source app store)
+### Installation Instructions
 
-https://f-droid.org
+1. **Download F-Droid** (open-source app store)
+   - Website: https://f-droid.org
 
-Install Termux
+2. **Install Termux from F-Droid**
+   - Package page: https://f-droid.org/en/packages/com.termux/
+   - Direct APK: https://f-droid.org/repo/com.termux_1002.apk
 
-Open Termux
+3. **Open Termux**
+   - You should see the terminal prompt: `~ $`
 
-``` ~ $ ```
+---
 
-Download Link :
- https://f-droid.org/en/packages/com.termux/
+## Step 2: Initialize the Linux Environment
 
- direct linke : https://f-droid.org/repo/com.termux_1002.apk
+### Update System Packages
 
-Step 1.2 — Initialize the Linux Environment
-
-In Termux, run exactly these commands (one by one):
+Run these commands in order:
 
 pkg update -y
 pkg upgrade -y
